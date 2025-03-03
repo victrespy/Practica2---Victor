@@ -883,29 +883,6 @@ a{
 }
 
 
-/*----------PLANIFICA---------*/
-#bif{
-    background-color: whitesmoke;
-    padding: 4vh 0;
-    height: 10vh;
-}
-#bif>div>div{
-    width: 30%;
-    display: flex;
-    justify-content: space-around;
-}
-.sub:hover::after{
-    content: "";
-    display: block;
-    height: 4px;
-    width: 100%;
-    background-color: rgb(255, 191, 0);
-    margin-top: 10px;
-    border-radius: 4px;
-}
-.sub:hover{
-    color: rgb(255, 191, 0);
-}
 
 
 
