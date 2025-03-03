@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oturath</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="./img/lathander.png">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+        $('.nav__toggle').on('click', function() {
+            $('.nav').toggleClass('display');
+        });
+        $('.nav__toggle').on('click', function() {
+            $('.menu__item').toggleClass('display');
+        });
+        $('.nav__toggle').on('click', function() {
+            $('.menu').toggleClass('escon');
+        });
+        });
+    </script>
+</head>
+<body>
+    <!-- <header>
+        <div>
+            <p>Visita Vharin</p>
+            <div class="logo"><img src="./img/Lathander_Icon.png" alt=""></div>
+        </div>
+        <div>
+            <div class="barra"></div>
+            <div class="contenedor">
+                <div class="logo"><a href="./home.html"><img src="./img/lathander.png" alt=""></a></div>
+                <nav>
+                    <ul>
+                        <li><a href="">Planifica tu viaje</a></li>
+                        <li><a href="">Que hacer</a></li>
+                        <li><a href="./regiones.html">Regiones</a></li>
+                        <li><a href="">Agenda</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="barra"></div>
+        </div>
+    </header> -->
+    <header>
+        <div class="barra"></div>
+        <nav class="nav">
+            <div class="nav__logo"><a href="./home.html"><img src="./img/lathander.png" alt=""></a></div>
+            <span class="nav__toggle">
+                <span class="menu-activador-linea"></span>
+                <span class="menu-activador-linea"></span>
+                <span class="menu-activador-linea"></span>
+            </span>
+            <ul class="menu escon">
+              <li class="menu__item">
+                <a href="./regiones.html">Regiones</a>
+              </li>
+              <li class="menu__item">
+                <a href="./agenda.html">Agenda</a>
+              </li>
+              <li class="menu__item">
+                <a href="./llegar.html">Planifica tu viaje</a>
+              </li>
+            </ul>
+        </nav>
+        <div class="barra"></div>
+    </header>
+    <main>
+        <section id="loc">
+            <p><a href="./home.html">Inicio</a> <span>></span> <a href="./regiones.html">Regiones</a> <span>></span> <b>Oturath</b></p>
+        </section>
+        <section id="banner_oturath">
+            <div class="info_b">
+                <h1>OTURATH: El dominio de Mordales</h1>
+            </div>
+        </section>
+        <section id="descubre">
+            <div class="contenedor">
+                <h2>Un reino olvidado por la luz</h2>
+                <p>Pocos viajeros osan adentrarse en Oturath, una región donde la noche parece alargarse más de lo debido y las montañas proyectan sombras que no siempre se mueven con el sol. Antaño un bastión de reyes crueles y cultos prohibidos, hoy sus ruinas yermosas y sus aldeas decadentes son todo lo que queda de un dominio consumido por la desgracia.</p>
+                <p>Los que aún habitan estas tierras lo hacen con recelo, cerrando puertas antes del anochecer y susurrando plegarias a dioses que nadie más recuerda. Dicen que las voces del pasado aún murmuran entre las rocas y que los caminos cambian de dirección cuando la luna es nueva.</p>
+            </div>
+        </section>
+        <section id="info_oturath">
+            <div class="contenedor">
+                <div id="que_ver">
+                    <h3>¿Que ver?</h3>
+                    <h4>La Fortaleza de Mordales</h4>
+                    <p>Un coloso de piedra ennegrecida que se alza en el corazón de Oturath. Sus torres están desgarradas por la guerra y el abandono, pero algunos afirman que sigue habitada. Se ven antorchas encendidas en sus murallas, y quienes han intentado explorarla nunca han regresado.</p>
+                    <div>
+
+                    </div>
+                    <h4>El Paso de las Cruces Negras</h4>
+                    <p>Un estrecho sendero entre montañas donde cruces torcidas marcan los lugares donde han caído viajeros. Nadie sabe quién las coloca ni por qué algunas parecen recientes, aunque los huesos a sus pies llevan siglos en la intemperie.</p>
+                    <div>
+                        
+                    </div>
+                    <h4>El Bosque de la Cadena</h4>
+                    <p>Un bosque de árboles retorcidos cuyas ramas están cubiertas de óxido y grilletes rotos. Se cree que aquí fueron llevados prisioneros para trabajos forzados hasta que, un día, sus carceleros desaparecieron sin dejar rastro. Pero algunos aseguran que las cadenas aún se mueven solas.</p>
+                </div>
+                <div id="consejos">
+                    <h3>Consejos para visitantes</h3>
+                    <h4>Evita las noches sin luna: </h4>
+                    <p>Se dice que es cuando los caminos cambian y la niebla trae cosas que no pertenecen a este mundo.</p>
+                    <h4>No viajes solo: </h4>
+                    <p>Pero tampoco en un grupo numeroso. Se dice que Oturath prefiere a los que van en grupos de tres o más.</p>
+                    <h4>No sigas las luces en la niebla: </h4>
+                    <p>No te llevarán de vuelta a casa.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <div>
+                <h3>Contacto</h3>
+                <p>Información de contacto de la oficina municipal de información turística:</p>
+                <p>Ayuntamiento - Plaza del Carmen s/n, 18071 andromeda</p>
+                <p>(-37) un yogurt y un hilo</p>
+            </div>
+            <div>
+                <h3>Horario</h3>
+                <p>Cerrado por obras</p>
+            </div>
+        </div>
+        <div>
+            <p>© Pais de Vharin. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

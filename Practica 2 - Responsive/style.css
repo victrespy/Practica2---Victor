@@ -1,0 +1,1406 @@
+@import url('https://fonts.googleapis.com/css2?family=Stoke:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+body{
+    background-color: black;
+    font-family: 'Stoke';
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*CLASES GENERALES*/
+.contenedor{
+    width: 80vw;
+    margin: auto;
+}
+.barra{
+    background-color: rgba(255, 191, 0, 0.637);
+    height: 4px;
+}
+.info_b{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    padding: 1%;
+}
+
+/*HEADER*/
+#h2{
+    position: sticky;
+    top: 0;
+    background-color: black;
+}
+#h2>div:nth-child(1){
+    display: flex;
+    color: whitesmoke;
+    align-items: center;
+    justify-content: end;
+    width: 90vw;
+    margin: auto;
+    font-size: 0.7rem;
+}
+#h2>div:nth-child(1) .logo{
+    width: 2vw;
+}
+#h2>div:nth-child(2){
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 20px 0px black;
+}
+#h2 .contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+#h2>div:nth-child(2) .logo{
+    width: 5%;
+}
+#h2 nav{
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+#h2 ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+#h2 a:hover{
+    color: rgb(255, 191, 0);
+}
+
+/*BANNER*/
+#banner{
+    background: url(./img/ciudades/banner.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 87vh;
+    display: flex;
+    align-items: end;
+}
+#banner h1{
+    font-size: 2rem;
+}
+
+/*RECOMENDACION*/
+#recomendacion{
+    background-color: whitesmoke;
+    display: flex;
+    padding: 5%;
+    justify-content: space-between;
+}
+#recomendacion>div:nth-child(1){
+    display: flex;
+    align-items: center;
+}
+#recomendacion>div:nth-child(2){
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#recomendacion>div:nth-child(2)>a{
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: 0.3s;
+    padding: 1%;
+}
+#recomendacion>div:nth-child(2)>a:hover{
+    background-color: black;
+    color: whitesmoke;
+    transform: scale(1.1);
+}
+.link{
+    font-size: 2rem;
+}
+#recomendacion>div:nth-child(2)>a:hover .link{
+    color: rgb(255, 191, 0);
+}
+
+
+/*INSPIRATE*/
+#inspira{
+    background-color: whitesmoke;
+    padding-bottom: 5%;
+}
+#inspira h2{
+    margin-bottom: 5vh;
+}
+.grid_ins {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 1vw;
+    grid-row-gap: 1vw;
+    height: 60vh;
+    }
+.ins1 {
+    grid-area: 1 / 1 / 3 / 3;
+    background-image: url(./img/ciudades/Veteth/veteth_3.jpg);
+}
+.ins2 {
+    grid-area: 1 / 3 / 2 / 5;
+    background-image: url(./img/ciudades/ElEld/Eld_1.jpg);
+}
+.ins3 {
+    grid-area: 2 / 3 / 3 / 4;
+    background-image: url(./img/ciudades/Eros/Eros_4.jpg);
+}
+.ins4 {
+    grid-area: 2 / 4 / 3 / 5;
+    background-image: url(./img/ciudades/Grancaparazon/Grancaparazon_3.jpg);
+}
+.grid_ins>a{
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px black;
+    display: flex;
+    align-items: end;
+}
+.grid_ins>a>div{
+    border-radius: 0 0 5px 5px;
+}
+#inspira a:hover p{
+    color: rgb(255, 191, 0);
+}
+
+/*----------LOC---------*/
+#loc{
+    background-color: black;
+    height: 5vh;
+    color: whitesmoke;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+#loc span{
+    color: rgb(255, 191, 0);
+}
+#loc a{
+    color: whitesmoke;
+}
+
+
+
+/*----------AGENDA---------*/
+#banner_agenda{
+    background: url(./img/agenda.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 50vh;
+    display: flex;
+    align-items: end;
+}
+#agenda{
+    background-color: whitesmoke;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+#agenda>div{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#agenda article{
+    text-align: center;
+    width: 26%;
+    margin-bottom: 5vh;
+}
+#agenda article>div{
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    border-radius: 15px;
+    display: flex;
+    align-items: end;
+    margin-bottom: 2vh;
+}
+#agenda article:nth-child(1)>div{
+    background: url(./img/agenda/justas.avif);
+    background-size: cover;
+}
+#agenda article:nth-child(2)>div{
+    background: url(./img/agenda/estrellas.png);
+    background-size: cover;
+    background-position: center center;
+}
+#agenda article:nth-child(3)>div{
+    background: url(./img/agenda/naval.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+#agenda article:nth-child(4)>div{
+    background: url(./img/agenda/ritual.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+#agenda article:nth-child(5)>div{
+    background: url(./img/agenda/fest.avif);
+    background-size: cover;
+    background-position: center center;
+}
+#agenda article:nth-child(6)>div{
+    background: url(./img/agenda/cabra.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+#agenda article>div>div{
+    border-radius: 0 0 15px 15px;
+}
+#agenda .gordito{
+    color: rgb(255, 191, 0);
+    font-size: 1.5rem;
+}
+#agenda p{
+    font-size: 1.2rem;
+}
+
+
+
+/*----------REGIONES---------*/
+/*REGIONES*/
+#regiones{
+    color: whitesmoke;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.grid_reg {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 1vw;
+    grid-row-gap: 1vw;
+    height: 70vh;
+}
+.reg1 {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    align-items: center;
+}
+#regiones h1{
+    font-size: 2.3rem;
+    margin-bottom: 3%;
+}
+.reg2 {
+    grid-area: 1 / 2 / 2 / 3;
+    background-image: url(./img/ciudades/banner.jpg);
+}
+.reg3 {
+    grid-area: 1 / 3 / 2 / 4;
+    background-image: url(./img/ciudades/Eliora/Eliora_10.jpg);
+}
+.reg4 {
+    grid-area: 1 / 4 / 2 / 5;
+    background-image: url(./img/ciudades/Grancaparazon/Grancaparazon_1.jpg);
+}
+.reg5 {
+    grid-area: 2 / 1 / 3 / 2;
+    background-image: url(./img/ciudades/ElEld/Eld_1.jpg);
+}
+.reg6 {
+    grid-area: 2 / 2 / 3 / 3;
+    background-image: url(./img/ciudades/Eros/Eros_3.jpg);
+}
+.reg7 {
+    grid-area: 2 / 3 / 3 / 4;
+    background-image: url(./img/ciudades/PueblosNortenos/PN_3.jpg);
+}
+.reg8 {
+    grid-area: 2 / 4 / 3 / 5;
+    background-image: url(./img/ciudades/Oscrith/Oscrith_3.jpg);
+}
+#regiones a{
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px black;
+    display: flex;
+    align-items: end;
+}
+#regiones a:hover h3{
+    color: rgb(255, 191, 0);
+}
+
+/*VISITA CONFLUENCIAS ENERGETICAS*/
+#conflu{
+    background-color: whitesmoke;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+#conflu .contenedor{
+    display: flex;
+    align-items: center;
+}
+#conflu .contenedor>div:nth-child(1){
+    background-image: url(./img/ciudades/Confluencias/CE_6.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 30%;
+    aspect-ratio: 1 / 1;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px black;
+}
+#conflu .contenedor>div:nth-child(2){
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+#conflu .contenedor>div:nth-child(2)>div:nth-child(1){
+    width: 60%;
+    margin-left: 10%;
+    font-size: 2rem;
+}
+#conflu .contenedor>div:nth-child(2)>div:nth-child(2){
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+#conflu a{
+    width: 100%;
+    height: 5vh;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: 0.3s;
+}
+#conflu a:hover{
+    background-color: black;
+    color: whitesmoke;
+    transform: scale(1.1);
+}
+.link{
+    font-size: 2rem;
+}
+#conflu a:hover .link{
+    color: rgb(255, 191, 0);
+}
+
+/*----------CONFLUENCIAS---------*/
+/*CONFLUENCIAS BANNER*/
+#banner_conflu{
+    background: url(./img/ciudades/Confluencias/CE_7.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 80vh;
+    display: flex;
+    align-items: end;
+}
+
+/*QUE SON*/
+#que_son{
+    background-color: whitesmoke;
+}
+#que_son>div{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+#que_son h2{
+    margin-bottom: 15px;
+}
+#que_son>div>div{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vh;
+}
+#que_son>div>div>div{
+    width: 23%;
+    aspect-ratio: 1 / 1;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 0px black;
+}
+#que_son>div>div>div:nth-child(1){
+    background: url(./img/ciudades/Confluencias/CE_1.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+#que_son>div>div>div:nth-child(2){
+    background: url(./img/ciudades/Confluencias/CE_2.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+#que_son>div>div>div:nth-child(3){
+    background: url(./img/ciudades/Confluencias/CE_3.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+#que_son>div>div>div:nth-child(4){
+    background: url(./img/ciudades/Confluencias/CE_4.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+/*----------EROS---------*/
+/*EROS BANNER*/
+#banner_eros{
+    background: url(./img/ciudades/Eros/Eros_1.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 80vh;
+    display: flex;
+    align-items: end;
+}
+
+/*DESCUBRE*/
+#descubre{
+    background-color: whitesmoke;
+}
+#descubre>div{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+#descubre h2{
+    margin-bottom: 15px;
+}
+/*INFO EROS*/
+#info_eros{
+    background-color: whitesmoke;
+}
+#info_eros>div{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+#info_eros>div>div{
+    width: 45%;
+}
+#info_eros>div>div>p{
+    margin-bottom: 10px;
+}
+#info_eros h3{
+    text-align: center;
+    margin-bottom: 15px;
+}
+#info_eros #que_ver>div:nth-child(4){
+    background: url(./img/ciudades/Eros/Eros_4.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 30vw;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 15vw;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 0px black;
+}
+#info_eros #que_ver>div:nth-child(7){
+    background: url(./img/ciudades/Eros/Eros_2.jpg);
+    background-size: cover;
+    background-position: center -100px;
+    width: 30vw;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 15vw;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 0px black;
+}
+#info_eros h4::before{
+    content: "· ";
+    color: rgb(255, 191, 0);
+    font-size: 1.6rem;
+}
+
+/*----------PUEBLOS---------*/
+/*BANNER*/
+#banner_pueblos{
+    background: url(./img/ciudades/PueblosNortenos/PN_4.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 80vh;
+    display: flex;
+    align-items: end;
+}
+
+/*INFO*/
+#info_pueblos{
+    background-color: whitesmoke;
+}
+#info_pueblos>div{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+#info_pueblos>div>div{
+    width: 45%;
+}
+#info_pueblos>div>div>p{
+    margin-bottom: 10px;
+}
+#info_pueblos h3{
+    text-align: center;
+    margin-bottom: 15px;
+}
+#info_pueblos #que_ver>div:nth-child(4){
+    background: url(./img/ciudades/PueblosNortenos/PN_3.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 30vw;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 15vw;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 0px black;
+}
+#info_pueblos #que_ver>div:nth-child(7){
+    background: url(./img/ciudades/PueblosNortenos/PN_6.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 30vw;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 15vw;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 0px black;
+}
+#info_pueblos h4::before{
+    content: "· ";
+    color: rgb(255, 191, 0);
+    font-size: 1.6rem;
+}
+
+/*----------OTURATH---------*/
+/*BANNER*/
+#banner_oturath{
+    background: url(./img/ciudades/Oscrith/Oscrith_2.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 80vh;
+    display: flex;
+    align-items: end;
+}
+/*INFO*/
+#info_oturath{
+    background-color: whitesmoke;
+}
+#info_oturath>div{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+#info_oturath>div>div{
+    width: 45%;
+}
+#info_oturath>div>div>p{
+    margin-bottom: 10px;
+}
+#info_oturath h3{
+    text-align: center;
+    margin-bottom: 15px;
+}
+#info_oturath #que_ver>div:nth-child(4){
+    background: url(./img/ciudades/Oscrith/Oscrith_3.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 30vw;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 15vw;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 0px black;
+}
+#info_oturath #que_ver>div:nth-child(7){
+    background: url(./img/ciudades/Oscrith/Oscrith_1.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 30vw;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 15vw;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 0px black;
+}
+#info_oturath h4::before{
+    content: "· ";
+    color: rgb(255, 191, 0);
+    font-size: 1.6rem;
+}
+
+/*----------ELIORA---------*/
+/*ELIORA BANNER*/
+#banner_eliora{
+    background: url(./img/ciudades/Eliora/Eliora_11.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 80vh;
+    display: flex;
+    align-items: end;
+}
+
+/*INFO ELIORA*/
+#info_eliora{
+    background-color: whitesmoke;
+}
+#info_eliora>div{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+#info_eliora>div>div{
+    width: 45%;
+}
+#info_eliora>div>div>p{
+    margin-bottom: 10px;
+}
+#info_eliora h3{
+    text-align: center;
+    margin-bottom: 15px;
+}
+#info_eliora #que_ver>div:nth-child(4){
+    background: url(./img/ciudades/Eliora/Eliora_5.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 30vw;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 15vw;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 0px black;
+}
+#info_eliora #que_ver>div:nth-child(7){
+    background: url(./img/ciudades/Eliora/Eliora_9.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 30vw;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 15vw;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 0px black;
+}
+#info_eliora h4::before{
+    content: "· ";
+    color: rgb(255, 191, 0);
+    font-size: 1.6rem;
+}
+
+/*----------EL ELD---------*/
+/*ELD BANNER*/
+#banner_eld{
+    background: url(./img/ciudades/ElEld/Eld_1.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 80vh;
+    display: flex;
+    align-items: end;
+}
+
+/*INFO ELD*/
+#info_eld{
+    background-color: whitesmoke;
+}
+#info_eld>div{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+#info_eld>div>div{
+    width: 45%;
+}
+#info_eld>div>div>p{
+    margin-bottom: 10px;
+}
+#info_eld h3{
+    text-align: center;
+    margin-bottom: 15px;
+}
+#info_eld #que_ver>div:nth-child(4){
+    background: url(./img/ciudades/ElEld/Eld_3.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 30vw;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 15vw;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 0px black;
+}
+#info_eld #que_ver>div:nth-child(7){
+    background: url(./img/ciudades/ElEld/Eld_5.jpg);
+    background-size: cover;
+    width: 30vw;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 15vw;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 0px black;
+}
+#info_eld h4::before{
+    content: "· ";
+    color: rgb(255, 191, 0);
+    font-size: 1.6rem;
+}
+
+
+/*----------GRANCAPARAZON---------*/
+/*GC BANNER*/
+#banner_gc{
+    background: url(./img/ciudades/Grancaparazon/Grancaparazon_2.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 80vh;
+    display: flex;
+    align-items: end;
+}
+
+/*INFO GC*/
+#info_gc{
+    background-color: whitesmoke;
+}
+#info_gc>div{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+#info_gc>div>div{
+    width: 45%;
+}
+#info_gc>div>div>p{
+    margin-bottom: 10px;
+}
+#info_gc h3{
+    text-align: center;
+    margin-bottom: 15px;
+}
+#info_gc #que_ver>div:nth-child(4){
+    background: url(./img/ciudades/Grancaparazon/Grancaparazon_4.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 30vw;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 15vw;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 0px black;
+}
+#info_gc #que_ver>div:nth-child(7){
+    background: url(./img/ciudades/Grancaparazon/Grancaparazon_3.jpg);
+    background-size: cover;
+    width: 30vw;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 15vw;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 0px black;
+}
+#info_gc h4::before{
+    content: "· ";
+    color: rgb(255, 191, 0);
+    font-size: 1.6rem;
+}
+
+
+/*----------VETETH---------*/
+/*VETETH BANNER*/
+#banner_veteth{
+    background: url(./img/ciudades/Veteth/veteth_4.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 80vh;
+    display: flex;
+    align-items: end;
+}
+
+/*INFO VETETH*/
+#info_veteth{
+    background-color: whitesmoke;
+}
+#info_veteth>div{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+#info_veteth>div>div{
+    width: 45%;
+}
+#info_veteth>div>div>p{
+    margin-bottom: 10px;
+}
+#info_veteth h3{
+    text-align: center;
+    margin-bottom: 15px;
+}
+#info_veteth #que_ver>div:nth-child(4){
+    background: url(./img/ciudades/banner.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 30vw;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 15vw;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 0px black;
+}
+#info_veteth #que_ver>div:nth-child(7){
+    background: url(./img/ciudades/Veteth/veteth_1.jpg);
+    background-size: cover;
+    width: 30vw;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 15vw;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 0px black;
+}
+#info_veteth h4::before{
+    content: "· ";
+    color: rgb(255, 191, 0);
+    font-size: 1.6rem;
+}
+
+
+/*----------PLANIFICA---------*/
+#bif{
+    background-color: whitesmoke;
+    padding: 4vh 0;
+    height: 10vh;
+}
+#bif>div>div{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+.sub:hover::after{
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: rgb(255, 191, 0);
+    margin-top: 10px;
+    border-radius: 4px;
+}
+.sub:hover{
+    color: rgb(255, 191, 0);
+}
+
+
+
+
+
+
+
+
+
+/*----------FOOTER---------*/
+footer{
+    color: whitesmoke;
+    width: 90%;
+    margin: auto;
+    font-size: 0.8rem;
+}
+footer>div:nth-child(1){
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: space-evenly;
+}
+footer h3{
+    margin-bottom: 10px;
+    color: rgb(255, 191, 0);
+}
+footer>div:nth-child(2){
+    text-align: end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+    overflow-x: hidden;
+}
+header{
+    background-color: whitesmoke;
+    position: sticky;
+    top: 0;
+}
+img{
+    max-width: 100%;
+}
+.nav {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__logo{
+    width: 10vh;
+}
+.nav__toggle {
+    display: none;
+    max-width: 45px;
+}
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+.menu__item {
+    display: inline-block;
+    transition: 0.5s ease;
+}
+
+.menu__item a {
+    color: #1b1b1b;
+    font-size: 1.5rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu__item a:hover {
+    transition: 0.5s ease;
+    color: rgb(255, 191, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------RESPONSIVE---------*/
+
+@media screen and (max-width:1200px) {
+    /*HEADER*/
+    header nav{
+        width: 80%;
+    }
+    /*RECOMENDACIONES*/
+    #recomendacion>div:nth-child(1){
+        width: 30%;
+    }
+    #recomendacion>div:nth-child(2){
+        width: 70%;
+    }
+    /*AGENDA*/
+    #agenda article {
+        width: 40%;
+    }
+
+}
+
+@media screen and (max-width:1100px) {
+    /*VISITA CONFLUENCIAS*/
+    #conflu .contenedor>div:nth-child(2){
+        display: block;
+    }
+    #conflu .contenedor>div:nth-child(2)>div:nth-child(1){
+        width: 85%;
+        margin: auto;
+        text-align: center;
+    }
+    #conflu .contenedor>div:nth-child(2)>div:nth-child(2){
+        margin: auto;
+    }
+    #conflu h2{
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:950px) {
+    /*HEADER*/
+    header nav{
+        width: 90%;
+    }
+    /*REGIONES*/
+    .grid_reg {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 1vw;
+        grid-row-gap: 1vw;
+        height: 120vw;
+        }
+        
+        .reg1 { grid-area: 1 / 1 / 2 / 2; }
+        .reg2 { grid-area: 1 / 2 / 2 / 3; }
+        .reg3 { grid-area: 2 / 1 / 3 / 2; }
+        .reg4 { grid-area: 2 / 2 / 3 / 3; }
+        .reg5 { grid-area: 3 / 1 / 4 / 2; }
+        .reg6 { grid-area: 3 / 2 / 4 / 3; }
+        .reg7 { grid-area: 4 / 1 / 5 / 2; }
+        .reg8 { grid-area: 4 / 2 / 5 / 3; }
+    
+    /*INFOS*/
+    #info_eros>div,
+    #info_oturath>div,
+    #info_pueblos>div,
+    #info_veteth>div,
+    #info_eliora>div,
+    #info_eld>div,
+    #info_gc>div{
+        display: block;
+    }
+    #info_eros>div>div,
+    #info_oturath>div>div,
+    #info_pueblos>div>div,
+    #info_veteth>div>div,
+    #info_eliora>div>div,
+    #info_eld>div>div,
+    #info_gc>div>div{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 5vh;
+    }
+    #info_eros #que_ver>div:nth-child(4),
+    #info_eros #que_ver>div:nth-child(7),
+    #info_oturath #que_ver>div:nth-child(4),
+    #info_oturath #que_ver>div:nth-child(7),
+    #info_pueblos #que_ver>div:nth-child(4),
+    #info_pueblos #que_ver>div:nth-child(7),
+    #info_veteth #que_ver>div:nth-child(4),
+    #info_veteth #que_ver>div:nth-child(7),
+    #info_eliora #que_ver>div:nth-child(4),
+    #info_eliora #que_ver>div:nth-child(7),
+    #info_eld #que_ver>div:nth-child(4),
+    #info_eld #que_ver>div:nth-child(7),
+    #info_gc #que_ver>div:nth-child(4),
+    #info_gc #que_ver>div:nth-child(7){
+        width: 50vw;
+        height: 25vw;
+    }
+
+    /*RECOMENDACION*/
+    #recomendacion{
+        display: block;
+    }
+    #recomendacion>div:nth-child(1){
+        width: 100%;
+        margin-bottom: 2vh;
+    }
+    #recomendacion>div:nth-child(1)>div{
+        width: 100%;
+        text-align: center;
+    }
+    #recomendacion>div:nth-child(2){
+        width: 100%;
+    }
+
+    /*VISITA CONFLU*/
+    #conflu .contenedor>div:nth-child(2)>div:nth-child(2){
+        width: 50%;
+    }
+    /*AGENDA*/
+    #agenda article {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:780px) {
+    /*QUE SON*/
+    #que_son>div>div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #que_son>div>div>div{
+        width: 45%;
+        margin-bottom: 4vh;
+    }
+}
+
+@media screen and (max-width:630px) {
+    /*INSPIRA*/
+    .grid_ins {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 1vw;
+        grid-row-gap: 1vw;
+        }
+        
+        .ins1 { grid-area: 1 / 1 / 3 / 3; }
+        .ins2 { grid-area: 3 / 1 / 5 / 2; }
+        .ins3 { grid-area: 3 / 2 / 4 / 3; }
+        .ins4 { grid-area: 4 / 2 / 5 / 3; }
+    
+    /*REGIONES*/
+    .grid_reg{
+        display: block;
+        height: auto;
+    }
+    .grid_reg>div{
+        text-align: center;
+        margin-bottom: 2vh;
+    }
+    .grid_reg>a{
+        aspect-ratio: 2 / 1;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 1vh;
+    }
+
+    /*VISITA CONFLU*/
+    #conflu h2{
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 910px) {
+    .nav {
+        transition: 0.3s ease;
+    }
+
+    .nav.display {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        display: block;
+        background: whitesmoke;
+    }
+    
+    .nav__logo {
+        display: inline-block;
+        width: 15vh;
+        align-self: center;
+    }
+
+    .nav__toggle {
+        display: block;
+        width: 35px;
+        margin: 7%;
+        float: right;
+        cursor: pointer;
+        transition: 0.3 ease;
+    }
+
+    .nav__toggle:hover {
+        color: whitesmoke;
+        transition: 0.3s ease;
+    }
+
+    .menu {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .menu__item {
+        opacity: 0;
+        text-align: left;
+        padding: 20px;
+        margin: 0px;
+        transition: 0.3s ease;
+    }
+
+    .menu__item a {
+        display: block;
+        color: #000000;
+        padding: 10px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+    .menu__item a:hover {
+        transition: 0.3s ease;
+        transform: translateX(5px);
+        color: #000000;
+    }
+
+    .menu__item.display {
+        display: block;
+        animation: showMenuItems 0.6s ease;
+        animation-fill-mode: both;
+    }
+
+    .menu__item.display:nth-child(1) {
+        animation-delay: 0.1s;
+    }
+
+    .menu__item.display:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+
+    .menu__item.display:nth-child(3) {
+        animation-delay: 0.3s;
+    }
+    .escon{
+        display: none;
+        transition: 0;
+    }
+    .escon *{
+        display: none;
+    }
+    .menu-activador-linea {
+        height: 2px;
+        display: block;
+        background-color: #000;
+        opacity: 1;
+        transform: translateY(0) rotate(0);
+        transition: all 0.3s;
+        margin-bottom: 10px;
+    }
+    .display .menu-activador-linea:nth-child(1) {
+        transform: translateY(12px) rotate(45deg);
+    }
+    
+    .display  .menu-activador-linea:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .display  .menu-activador-linea:nth-child(3) {
+        transform: translateY(-12px) rotate(-45deg);
+    }
+}
+
+@keyframes showMenuItems {
+    0% {
+        opacity: 0;
+        transform: translate3d(40px, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+
+
+
+@media screen and (max-width:530px) {
+    /*FOOTER*/
+    footer>div>div{
+        width: 40%;
+    }
+    footer>div>div:nth-child(2){
+        text-align: end;
+    }
+    footer>div:nth-child(1) p{
+        margin-bottom: 10px;
+    }
+}

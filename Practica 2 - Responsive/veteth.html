@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veteth</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="./img/lathander.png">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+        $('.nav__toggle').on('click', function() {
+            $('.nav').toggleClass('display');
+        });
+        $('.nav__toggle').on('click', function() {
+            $('.menu__item').toggleClass('display');
+        });
+        $('.nav__toggle').on('click', function() {
+            $('.menu').toggleClass('escon');
+        });
+        });
+    </script>
+</head>
+<body>
+    <!-- <header>
+        <div>
+            <p>Visita Vharin</p>
+            <div class="logo"><img src="./img/Lathander_Icon.png" alt=""></div>
+        </div>
+        <div>
+            <div class="barra"></div>
+            <div class="contenedor">
+                <div class="logo"><a href="./home.html"><img src="./img/lathander.png" alt=""></a></div>
+                <nav>
+                    <ul>
+                        <li><a href="">Planifica tu viaje</a></li>
+                        <li><a href="">Que hacer</a></li>
+                        <li><a href="./regiones.html">Regiones</a></li>
+                        <li><a href="">Agenda</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="barra"></div>
+        </div>
+    </header> -->
+    <header>
+        <div class="barra"></div>
+        <nav class="nav">
+            <div class="nav__logo"><a href="./home.html"><img src="./img/lathander.png" alt=""></a></div>
+            <span class="nav__toggle">
+                <span class="menu-activador-linea"></span>
+                <span class="menu-activador-linea"></span>
+                <span class="menu-activador-linea"></span>
+            </span>
+            <ul class="menu escon">
+              <li class="menu__item">
+                <a href="./regiones.html">Regiones</a>
+              </li>
+              <li class="menu__item">
+                <a href="./agenda.html">Agenda</a>
+              </li>
+              <li class="menu__item">
+                <a href="./llegar.html">Planifica tu viaje</a>
+              </li>
+            </ul>
+        </nav>
+        <div class="barra"></div>
+    </header>
+    <main>
+        <section id="loc">
+            <p><a href="./home.html">Inicio</a> <span>></span> <a href="./regiones.html">Regiones</a> <span>></span> <b>Veteth</b></p>
+        </section>
+        <section id="banner_veteth">
+            <div class="info_b">
+                <h1>Veteth: La Majestuosa Capital del Reino</h1>
+            </div>
+        </section>
+        <section id="descubre">
+            <div class="contenedor">
+                <h2>El corazón del poder y la historia</h2>
+                <p>Imponente y orgullosa, Veteth se alza como la joya del reino, una ciudad donde la grandeza de los reyes y la astucia de los mercaderes han tejido un legado que perdura a través de los siglos. Desde sus murallas colosales hasta sus palacios de mármol y sus mercados vibrantes, Veteth es el centro político, cultural y económico del país, un crisol donde conviven nobles, artesanos, soldados y viajeros en busca de fortuna.</p>
+                <p>Las calles adoquinadas resuenan con el eco de cascos de caballos y pregoneros, mientras los estandartes de la casa real ondean sobre torres doradas. Aquí, el destino del reino se decide en sus salones de mármol, mientras que en las tabernas y callejones se tejen conspiraciones y rumores sobre el futuro.</p>
+            </div>
+        </section>
+        <section id="info_veteth">
+            <div class="contenedor">
+                <div id="que_ver">
+                    <h3>¿Que ver?</h3>
+                    <h4>El Palacio del Alba</h4>
+                    <p>Residencia de la familia real y el centro del poder en Veteth, este majestuoso palacio se erige con sus torres doradas y muros de mármol blanco. Sus salones están decorados con tapices que narran las gestas de los antiguos monarcas, y en sus jardines secretos se dice que se toman decisiones que jamás llegarán a oídos del pueblo.</p>
+                    <div>
+
+                    </div>
+                    <h4>La Plaza de los Mil Estandartes</h4>
+                    <p>El corazón de la ciudad, un vasto espacio donde se celebran ferias, proclamaciones reales y ejecuciones públicas. En sus alrededores se encuentran los gremios más influyentes, las mansiones de los nobles y las sedes de los banqueros que mueven las riquezas del reino.</p>
+                    <div>
+                        
+                    </div>
+                    <h4>La Gran Biblioteca de Veteth</h4>
+                    <p>Un santuario del conocimiento, donde eruditos de todas partes del mundo estudian textos antiguos, mapas olvidados y secretos arcanos. Sus pasillos están custodiados por escribas y guardianes, pues no todos los libros que reposan en sus estanterías deberían ser leídos.</p>
+                </div>
+                <div id="consejos">
+                    <h3>Consejos para visitantes</h3>
+                    <h4>Vístete acorde a tu propósito: </h4>
+                    <p>En Veteth, la apariencia abre puertas o las cierra para siempre.</p>
+                    <h4>Presta atención a las campanas: </h4>
+                    <p>Marcan las horas, pero también anuncian eventos importantes… y peligros inminentes.</p>
+                    <h4>Las paredes tienen oídos: </h4>
+                    <p>Ya sea en los palacios o en las tabernas, nunca sabes quién está escuchando.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <div>
+                <h3>Contacto</h3>
+                <p>Información de contacto de la oficina municipal de información turística:</p>
+                <p>Ayuntamiento - Plaza del Carmen s/n, 18071 andromeda</p>
+                <p>(-37) un yogurt y un hilo</p>
+            </div>
+            <div>
+                <h3>Horario</h3>
+                <p>Cerrado por obras</p>
+            </div>
+        </div>
+        <div>
+            <p>© Pais de Vharin. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

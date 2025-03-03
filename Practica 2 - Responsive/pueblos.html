@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pueblos Norteños</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="./img/lathander.png">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+        $('.nav__toggle').on('click', function() {
+            $('.nav').toggleClass('display');
+        });
+        $('.nav__toggle').on('click', function() {
+            $('.menu__item').toggleClass('display');
+        });
+        $('.nav__toggle').on('click', function() {
+            $('.menu').toggleClass('escon');
+        });
+        });
+    </script>
+</head>
+<body>
+    <!-- <header>
+        <div>
+            <p>Visita Vharin</p>
+            <div class="logo"><img src="./img/Lathander_Icon.png" alt=""></div>
+        </div>
+        <div>
+            <div class="barra"></div>
+            <div class="contenedor">
+                <div class="logo"><a href="./home.html"><img src="./img/lathander.png" alt=""></a></div>
+                <nav>
+                    <ul>
+                        <li><a href="">Planifica tu viaje</a></li>
+                        <li><a href="">Que hacer</a></li>
+                        <li><a href="./regiones.html">Regiones</a></li>
+                        <li><a href="">Agenda</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="barra"></div>
+        </div>
+    </header> -->
+    <header>
+        <div class="barra"></div>
+        <nav class="nav">
+            <div class="nav__logo"><a href="./home.html"><img src="./img/lathander.png" alt=""></a></div>
+            <span class="nav__toggle">
+                <span class="menu-activador-linea"></span>
+                <span class="menu-activador-linea"></span>
+                <span class="menu-activador-linea"></span>
+            </span>
+            <ul class="menu escon">
+              <li class="menu__item">
+                <a href="./regiones.html">Regiones</a>
+              </li>
+              <li class="menu__item">
+                <a href="#">Agenda</a>
+              </li>
+              <li class="menu__item">
+                <a href="./llegar.html">Planifica tu viaje</a>
+              </li>
+            </ul>
+        </nav>
+        <div class="barra"></div>
+    </header>
+    <main>
+        <section id="loc">
+            <p><a href="./home.html">Inicio</a> <span>></span> <a href="./regiones.html">Regiones</a> <span>></span> <b>Pueblos Norteños</b></p>
+        </section>
+        <section id="banner_pueblos">
+            <div class="info_b">
+                <h1>LOS PUEBLOS NORTEÑOS: Un rincón olvidado en las montañas</h1>
+            </div>
+        </section>
+        <section id="descubre">
+            <div class="contenedor">
+                <h2>Un viaje a la tierra de la bruma y la piedra</h2>
+                <p>Escondidos entre las cumbres y los valles eternamente envueltos en neblina, Los Pueblos Norteños son una región de agreste belleza y tradiciones ancestrales. Aquí no hallarás grandes ciudades ni palacios de reyes, solo aldeas de piedra, castillos en ruinas y senderos olvidados que conducen a secretos de tiempos antiguos.</p>
+                <p>La vida en estas tierras se rige por el ritmo de las estaciones y el eco de antiguas leyendas. Los viajeros que se aventuran en sus caminos empedrados encontrarán hospitalidad en tabernas de techos bajos, historias susurradas al calor del fuego y la sensación de haber cruzado un umbral hacia una era perdida.</p>
+            </div>
+        </section>
+        <section id="info_pueblos">
+            <div class="contenedor">
+                <div id="que_ver">
+                    <h3>¿Que ver?</h3>
+                    <h4>Fortaleza de Eldrath</h4>
+                    <p>Un castillo semiderruido en la cima de un acantilado, donde antaño gobernaron los señores de la región. Se dice que sus muros aún guardan secretos de guerras y traiciones, y algunos viajeros aseguran haber visto luces en las torres, a pesar de que nadie habita allí desde hace siglos.</p>
+                    <div>
+
+                    </div>
+                    <h4>Aldea de Vaelheim</h4>
+                    <p>Una de las aldeas más antiguas de la región, famosa por sus mercados de invierno y su taberna, El Cuervo y la Tormenta, donde los juglares cantan sobre héroes caídos y los ancianos narran historias sobre los horrores que acechan en la niebla.</p>
+                    <div>
+                        
+                    </div>
+                    <h4>Nárgond</h4>
+                    <p>Un pueblo solitario en la ladera de una montaña. Famoso por sus platos tracionales y sus vistas a la orilla del lago</p>
+                </div>
+                <div id="consejos">
+                    <h3>Consejos para visitantes</h3>
+                    <h4>Mejor época para visitar: </h4>
+                    <p>El otoño, cuando los bosques se tiñen de rojo y el aire está cargado con el aroma de las chimeneas encendidas.</p>
+                    <h4>Equipo recomendado: </h4>
+                    <p>Lleva una capa gruesa, un farol y, si los lugareños te advierten de algo, escúchalos.</p>
+                    <h4>Leyenda local: </h4>
+                    <p>Jamás respondas si oyes tu nombre en el viento. No siempre es el viento quien llama.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <div>
+                <h3>Contacto</h3>
+                <p>Información de contacto de la oficina municipal de información turística:</p>
+                <p>Ayuntamiento - Plaza del Carmen s/n, 18071 andromeda</p>
+                <p>(-37) un yogurt y un hilo</p>
+            </div>
+            <div>
+                <h3>Horario</h3>
+                <p>Cerrado por obras</p>
+            </div>
+        </div>
+        <div>
+            <p>© Pais de Vharin. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

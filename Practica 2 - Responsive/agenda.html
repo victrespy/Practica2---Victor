@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="./img/lathander.png">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+        $('.nav__toggle').on('click', function() {
+            $('.nav').toggleClass('display');
+        });
+        $('.nav__toggle').on('click', function() {
+            $('.menu__item').toggleClass('display');
+        });
+        $('.nav__toggle').on('click', function() {
+            $('.menu').toggleClass('escon');
+        });
+        });
+    </script>
+</head>
+<body>
+    <!-- <header>
+        <div>
+            <p>Visita Vharin</p>
+            <div class="logo"><img src="./img/Lathander_Icon.png" alt=""></div>
+        </div>
+        <div>
+            <div class="barra"></div>
+            <div class="contenedor">
+                <div class="logo"><a href="./home.html"><img src="./img/lathander.png" alt=""></a></div>
+                <nav>
+                    <ul>
+                        <li><a href="">Planifica tu viaje</a></li>
+                        <li><a href="">Que hacer</a></li>
+                        <li><a href="./regiones.html">Regiones</a></li>
+                        <li><a href="">Agenda</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="barra"></div>
+        </div>
+    </header> -->
+    <header>
+        <div class="barra"></div>
+        <nav class="nav">
+            <div class="nav__logo"><a href="./home.html"><img src="./img/lathander.png" alt=""></a></div>
+            <span class="nav__toggle">
+                <span class="menu-activador-linea"></span>
+                <span class="menu-activador-linea"></span>
+                <span class="menu-activador-linea"></span>
+            </span>
+            <ul class="menu escon">
+              <li class="menu__item">
+                <a href="./regiones.html">Regiones</a>
+              </li>
+              <li class="menu__item">
+                <a href="./agenda.html">Agenda</a>
+              </li>
+              <li class="menu__item">
+                <a href="./llegar.html">Planifica tu viaje</a>
+              </li>
+            </ul>
+        </nav>
+        <div class="barra"></div>
+    </header>
+    <main>
+        <section id="loc">
+            <p><a href="./home.html">Inicio</a> <span>></span> <b>Agenda</b></p>
+        </section>
+        <section id="banner_agenda">
+            <div class="info_b">
+                <h1>AGENDA CULTURAL</h1>
+            </div>
+        </section>
+        <section id="agenda">
+            <div class="contenedor">
+                <article>
+                    <div>
+                        <div class="info_b">
+                            <h2>Justas en Veteth</h2>
+                        </div>
+                    </div>
+                    <p><span class="gordito">26</span> Febrero <span class="gordito">|</span> 20:30 h</p>
+                </article>
+                <article>
+                    <div>
+                        <div class="info_b">
+                            <h2>Observacion de estrellas</h2>
+                        </div>
+                    </div>
+                    <p><span class="gordito">3</span> Marzo <span class="gordito">|</span> 23:30 h</p>
+                </article>
+                <article>
+                    <div>
+                        <div class="info_b">
+                            <h2>Batalla naval</h2>
+                        </div>
+                    </div>
+                    <p><span class="gordito">7</span> Marzo <span class="gordito">|</span> 12:00 h</p>
+                </article>
+                <article>
+                    <div>
+                        <div class="info_b">
+                            <h2>Rituales Satanicos</h2>
+                        </div>
+                    </div>
+                    <p><span class="gordito">15</span> Marzo <span class="gordito">|</span> 06:15 h</p>
+                </article>
+                <article>
+                    <div>
+                        <div class="info_b">
+                            <h2>Festival de la cerveza</h2>
+                        </div>
+                    </div>
+                    <p><span class="gordito">23</span> Marzo <span class="gordito">|</span> 13:00 h</p>
+                </article>
+                <article>
+                    <div>
+                        <div class="info_b">
+                            <h2>El salto de la cabra</h2>
+                        </div>
+                    </div>
+                    <p><span class="gordito">8</span> Abril <span class="gordito">|</span> 16:30 h</p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <div>
+                <h3>Contacto</h3>
+                <p>Información de contacto de la oficina municipal de información turística:</p>
+                <p>Ayuntamiento - Plaza del Carmen s/n, 18071 andromeda</p>
+                <p>(-37) un yogurt y un hilo</p>
+            </div>
+            <div>
+                <h3>Horario</h3>
+                <p>Cerrado por obras</p>
+            </div>
+        </div>
+        <div>
+            <p>© Pais de Vharin. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

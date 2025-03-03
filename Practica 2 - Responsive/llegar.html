@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como llegar</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="./img/lathander.png">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+        $('.nav__toggle').on('click', function() {
+            $('.nav').toggleClass('display');
+        });
+        $('.nav__toggle').on('click', function() {
+            $('.menu__item').toggleClass('display');
+        });
+        $('.nav__toggle').on('click', function() {
+            $('.menu').toggleClass('escon');
+        });
+        });
+    </script>
+</head>
+<body>
+    <!-- <header>
+        <div>
+            <p>Visita Vharin</p>
+            <div class="logo"><img src="./img/Lathander_Icon.png" alt=""></div>
+        </div>
+        <div>
+            <div class="barra"></div>
+            <div class="contenedor">
+                <div class="logo"><a href="./home.html"><img src="./img/lathander.png" alt=""></a></div>
+                <nav>
+                    <ul>
+                        <li><a href="">Planifica tu viaje</a></li>
+                        <li><a href="">Que hacer</a></li>
+                        <li><a href="./regiones.html">Regiones</a></li>
+                        <li><a href="">Agenda</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="barra"></div>
+        </div>
+    </header> -->
+    <header>
+        <div class="barra"></div>
+        <nav class="nav">
+            <div class="nav__logo"><a href="./home.html"><img src="./img/lathander.png" alt=""></a></div>
+            <span class="nav__toggle">
+                <span class="menu-activador-linea"></span>
+                <span class="menu-activador-linea"></span>
+                <span class="menu-activador-linea"></span>
+            </span>
+            <ul class="menu escon">
+              <li class="menu__item">
+                <a href="./regiones.html">Regiones</a>
+              </li>
+              <li class="menu__item">
+                <a href="./agenda.html">Agenda</a>
+              </li>
+              <li class="menu__item">
+                <a href="./llegar.html">Planifica tu viaje</a>
+              </li>
+            </ul>
+        </nav>
+        <div class="barra"></div>
+    </header>
+    <main>
+        <section id="loc">
+            <p><a href="./home.html">Inicio</a> <span>></span> Planifica tu viaje</a> <span>></span> <b>Como llegar</b></p>
+        </section>
+        <section id="bif">
+            <div class="contenedor">
+                <div>
+                    <a href="./llegar.html" class="sub"><b>Como llegar a Vharin</b></a>
+                    <a href="./mover.html" class="sub">Moverse por Vharin</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            
+        </section>
+        <section>
+            
+        </section>
+    </main>
+    <footer>
+        <div>
+            <div>
+                <h3>Contacto</h3>
+                <p>Información de contacto de la oficina municipal de información turística:</p>
+                <p>Ayuntamiento - Plaza del Carmen s/n, 18071 andromeda</p>
+                <p>(-37) un yogurt y un hilo</p>
+            </div>
+            <div>
+                <h3>Horario</h3>
+                <p>Cerrado por obras</p>
+            </div>
+        </div>
+        <div>
+            <p>© Pais de Vharin. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

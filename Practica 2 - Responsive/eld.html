@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eld</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="./img/lathander.png">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+        $('.nav__toggle').on('click', function() {
+            $('.nav').toggleClass('display');
+        });
+        $('.nav__toggle').on('click', function() {
+            $('.menu__item').toggleClass('display');
+        });
+        $('.nav__toggle').on('click', function() {
+            $('.menu').toggleClass('escon');
+        });
+        });
+    </script>
+</head>
+<body>
+    <!-- <header>
+        <div>
+            <p>Visita Vharin</p>
+            <div class="logo"><img src="./img/Lathander_Icon.png" alt=""></div>
+        </div>
+        <div>
+            <div class="barra"></div>
+            <div class="contenedor">
+                <div class="logo"><a href="./home.html"><img src="./img/lathander.png" alt=""></a></div>
+                <nav>
+                    <ul>
+                        <li><a href="">Planifica tu viaje</a></li>
+                        <li><a href="">Que hacer</a></li>
+                        <li><a href="./regiones.html">Regiones</a></li>
+                        <li><a href="">Agenda</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="barra"></div>
+        </div>
+    </header> -->
+    <header>
+        <div class="barra"></div>
+        <nav class="nav">
+            <div class="nav__logo"><a href="./home.html"><img src="./img/lathander.png" alt=""></a></div>
+            <span class="nav__toggle">
+                <span class="menu-activador-linea"></span>
+                <span class="menu-activador-linea"></span>
+                <span class="menu-activador-linea"></span>
+            </span>
+            <ul class="menu escon">
+              <li class="menu__item">
+                <a href="./regiones.html">Regiones</a>
+              </li>
+              <li class="menu__item">
+                <a href="./agenda.html">Agenda</a>
+              </li>
+              <li class="menu__item">
+                <a href="./llegar.html">Planifica tu viaje</a>
+              </li>
+            </ul>
+        </nav>
+        <div class="barra"></div>
+    </header>
+    <main>
+        <section id="loc">
+            <p><a href="./home.html">Inicio</a> <span>></span> <a href="./regiones.html">Regiones</a> <span>></span> <b>El Eld</b></p>
+        </section>
+        <section id="banner_eld">
+            <div class="info_b">
+                <h1>EL ELD: La Ciudad Oculta en el Corazón del Bosque</h1>
+            </div>
+        </section>
+        <section id="descubre">
+            <div class="contenedor">
+                <h2>Un reino entre las sombras de los árboles</h2>
+                <p>En lo más profundo del Bosque de Eld, donde la luz del sol apenas se filtra entre las copas de los árboles ancestrales, se encuentra la mística ciudad de El Eld. Sus torres de madera y piedra se alzan entre raíces colosales, y sus puentes colgantes conectan los niveles de un asentamiento que parece crecer con el bosque mismo. No hay caminos fáciles que lleven a este enclave, y aquellos que lo encuentran rara vez llegan por accidente.</p>
+                <p>El Eld es un refugio para sabios, cazadores y aquellos que buscan escapar del mundo exterior. Sus habitantes viven en armonía con el bosque, pero advierten a los forasteros que no todos los susurros entre los árboles pertenecen al viento.</p>
+            </div>
+        </section>
+        <section id="info_eld">
+            <div class="contenedor">
+                <div id="que_ver">
+                    <h3>¿Que ver?</h3>
+                    <h4>El Santuario de los Antiguos</h4>
+                    <p>Un conjunto de ruinas cubiertas de musgo, donde las estatuas de deidades olvidadas observan en silencio a quienes se atreven a entrar. Algunos aseguran que, al anochecer, las estatuas cambian de posición.</p>
+                    <div>
+
+                    </div>
+                    <h4>El Árbol del Silencio</h4>
+                    <p>Un coloso de raíces nudosas en el centro de la ciudad, su tronco es tan ancho que alberga santuarios y salas de reunión en su interior. Se dice que su savia posee propiedades curativas, pero también que sus hojas solo caen cuando algo terrible está por ocurrir.</p>
+                    <div>
+                        
+                    </div>
+                    <h4>Las Aguas de Elhiran</h4>
+                    <p>Un lago de aguas inmóviles y cristalinas a las afueras de la ciudad. Se dice que quien mire su reflejo demasiado tiempo podrá ver su propio destino… aunque no todos logran comprender lo que han visto.</p>
+                </div>
+                <div id="consejos">
+                    <h3>Consejos para visitantes</h3>
+                    <h4>Lleva una ofrenda: </h4>
+                    <p>Los habitantes de El Eld respetan a quienes muestran gratitud hacia el bosque. Una simple piedra tallada o un puñado de hojas perfumadas bastará.</p>
+                    <h4>No enciendas fuego sin permiso: </h4>
+                    <p>La ciudad y el bosque son uno mismo, y no perdonan a quienes dañan sus dominios.</p>
+                    <h4>Nunca sigas a una voz en la oscuridad: </h4>
+                    <p>Algunos caminos conducen a lugares de los que nadie regresa.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <div>
+                <h3>Contacto</h3>
+                <p>Información de contacto de la oficina municipal de información turística:</p>
+                <p>Ayuntamiento - Plaza del Carmen s/n, 18071 andromeda</p>
+                <p>(-37) un yogurt y un hilo</p>
+            </div>
+            <div>
+                <h3>Horario</h3>
+                <p>Cerrado por obras</p>
+            </div>
+        </div>
+        <div>
+            <p>© Pais de Vharin. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

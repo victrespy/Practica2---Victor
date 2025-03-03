@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regiones</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="./img/lathander.png">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+        $('.nav__toggle').on('click', function() {
+            $('.nav').toggleClass('display');
+        });
+        $('.nav__toggle').on('click', function() {
+            $('.menu__item').toggleClass('display');
+        });
+        $('.nav__toggle').on('click', function() {
+            $('.menu').toggleClass('escon');
+        });
+        });
+    </script>
+</head>
+<body>
+    <!-- <header>
+        <div>
+            <p>Visita Vharin</p>
+            <div class="logo"><img src="./img/Lathander_Icon.png" alt=""></div>
+        </div>
+        <div>
+            <div class="barra"></div>
+            <div class="contenedor">
+                <div class="logo"><a href="./home.html"><img src="./img/lathander.png" alt=""></a></div>
+                <nav>
+                    <ul>
+                        <li><a href="">Planifica tu viaje</a></li>
+                        <li><a href="">Que hacer</a></li>
+                        <li><a href="./regiones.html">Regiones</a></li>
+                        <li><a href="">Agenda</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="barra"></div>
+        </div>
+    </header> -->
+    <header>
+        <div class="barra"></div>
+        <nav class="nav">
+            <div class="nav__logo"><a href="./home.html"><img src="./img/lathander.png" alt=""></a></div>
+            <span class="nav__toggle">
+                <span class="menu-activador-linea"></span>
+                <span class="menu-activador-linea"></span>
+                <span class="menu-activador-linea"></span>
+            </span>
+            <ul class="menu escon">
+              <li class="menu__item">
+                <a href="./regiones.html">Regiones</a>
+              </li>
+              <li class="menu__item">
+                <a href="./agenda.html">Agenda</a>
+              </li>
+              <li class="menu__item">
+                <a href="./llegar.html">Planifica tu viaje</a>
+              </li>
+            </ul>
+        </nav>
+        <div class="barra"></div>
+    </header>
+    <main>
+        <section id="loc">
+            <p><a href="./home.html">Inicio</a> <span>></span> <b>Regiones</b></p>
+        </section>
+        <section id="regiones">
+            <div class="contenedor">
+                <div class="grid_reg">
+                    <div class="reg1">
+                        <div>
+                            <h1>Vharin por regiones</h1>
+                            <p>En esta sección te mostramos todo lo que hay que visitar en Vharin ordenado por regiones.</p>
+                        </div>
+                    </div>
+                    <a href="./veteth.html" class="reg2">
+                        <div class="info_b">
+                            <h3>Veteth</h3>
+                        </div>
+                    </a>
+                    <a href="./eliora.html" class="reg3">
+                        <div class="info_b">
+                            <h3>Eliora</h3>
+                        </div>
+                    </a>
+                    <a href="./grancaparazon.html" class="reg4">
+                        <div class="info_b">
+                            <h3>Grancaparazon</h3>
+                        </div>
+                    </a>
+                    <a href="./eld.html" class="reg5">
+                        <div class="info_b">
+                            <h3>El Eld</h3>
+                        </div>
+                    </a>
+                    <a href="./eros.html" class="reg6">
+                        <div class="info_b">
+                            <h3>Las ruinas de Eros</h3>
+                        </div>
+                    </a>
+                    <a href="./pueblos.html" class="reg7">
+                        <div class="info_b">
+                            <h3>Los Pueblos Norteños</h3>
+                        </div>
+                    </a>
+                    <a href="./oturath.html" class="reg8">
+                        <div class="info_b">
+                            <h3>Oturath</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="conflu">
+            <div class="contenedor">
+                <div></div>
+                <div>
+                    <div>
+                        <h2>Confluencias energeticas</h2>
+                    </div>
+                    <div>
+                        <a href="./confluencias.html">Visitalas <span class="link">></span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <div>
+                <h3>Contacto</h3>
+                <p>Información de contacto de la oficina municipal de información turística:</p>
+                <p>Ayuntamiento - Plaza del Carmen s/n, 18071 andromeda</p>
+                <p>(-37) un yogurt y un hilo</p>
+            </div>
+            <div>
+                <h3>Horario</h3>
+                <p>Cerrado por obras</p>
+            </div>
+        </div>
+        <div>
+            <p>© Pais de Vharin. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

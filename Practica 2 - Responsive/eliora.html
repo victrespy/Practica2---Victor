@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliora</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="./img/lathander.png">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+        $('.nav__toggle').on('click', function() {
+            $('.nav').toggleClass('display');
+        });
+        $('.nav__toggle').on('click', function() {
+            $('.menu__item').toggleClass('display');
+        });
+        $('.nav__toggle').on('click', function() {
+            $('.menu').toggleClass('escon');
+        });
+        });
+    </script>
+</head>
+<body>
+    <!-- <header>
+        <div>
+            <p>Visita Vharin</p>
+            <div class="logo"><img src="./img/Lathander_Icon.png" alt=""></div>
+        </div>
+        <div>
+            <div class="barra"></div>
+            <div class="contenedor">
+                <div class="logo"><a href="./home.html"><img src="./img/lathander.png" alt=""></a></div>
+                <nav>
+                    <ul>
+                        <li><a href="">Planifica tu viaje</a></li>
+                        <li><a href="">Que hacer</a></li>
+                        <li><a href="./regiones.html">Regiones</a></li>
+                        <li><a href="">Agenda</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="barra"></div>
+        </div>
+    </header> -->
+    <header>
+        <div class="barra"></div>
+        <nav class="nav">
+            <div class="nav__logo"><a href="./home.html"><img src="./img/lathander.png" alt=""></a></div>
+            <span class="nav__toggle">
+                <span class="menu-activador-linea"></span>
+                <span class="menu-activador-linea"></span>
+                <span class="menu-activador-linea"></span>
+            </span>
+            <ul class="menu escon">
+              <li class="menu__item">
+                <a href="./regiones.html">Regiones</a>
+              </li>
+              <li class="menu__item">
+                <a href="./agenda.html">Agenda</a>
+              </li>
+              <li class="menu__item">
+                <a href="./llegar.html">Planifica tu viaje</a>
+              </li>
+            </ul>
+        </nav>
+        <div class="barra"></div>
+    </header>
+    <main>
+        <section id="loc">
+            <p><a href="./home.html">Inicio</a> <span>></span> <a href="./regiones.html">Regiones</a> <span>></span> <b>Eliora</b></p>
+        </section>
+        <section id="banner_eliora">
+            <div class="info_b">
+                <h1>ELIORA: La Joya del Desierto</h1>
+            </div>
+        </section>
+        <section id="descubre">
+            <div class="contenedor">
+                <h2>Un oasis de cultura y comercio en la arena</h2>
+                <p>En el corazón del vasto desierto, donde las dunas doradas se extienden hasta el horizonte, se alza Eliora, una ciudad próspera rodeada de oasis y alimentada por el incesante ir y venir de mercaderes, viajeros y aventureros. Conocida como "La Joya del Desierto", Eliora ha sido un punto clave en las rutas comerciales desde tiempos inmemoriales, donde caravanas de todas las regiones se reúnen para intercambiar especias exóticas, telas de finísimo tejido y secretos susurrados entre sombras.</p>
+                <p>Las cúpulas resplandecientes de sus palacios, los callejones perfumados con incienso y la brisa fresca de sus oasis hacen de Eliora un refugio tanto para los que buscan fortuna como para aquellos que desean perderse en el misterio de la arena.</p>
+            </div>
+        </section>
+        <section id="info_eliora">
+            <div class="contenedor">
+                <div id="que_ver">
+                    <h3>¿Que ver?</h3>
+                    <h4>El Gran Bazar de los Mil Colores</h4>
+                    <p>El corazón de la economía eliorana, un mercado colosal donde se pueden encontrar desde alfombras encantadas hasta joyas traídas de tierras lejanas. Aquí, los mercaderes no solo venden mercancías, sino también rumores y mapas de tesoros ocultos en las profundidades del desierto.</p>
+                    <div>
+
+                    </div>
+                    <h4>El Oasis de Sahar</h4>
+                    <p>Uno de los mayores oasis de la región, famoso por sus aguas cristalinas y su vegetación exuberante. Viajeros y caravanas descansan aquí antes de adentrarse en el desierto, pero las leyendas advierten que, al caer la noche, sombras irreales pueden verse reflejadas en el agua.</p>
+                    <div>
+                        
+                    </div>
+                    <h4>El Palacio de los Vientos</h4>
+                    <p>Residencia de los gobernantes de Eliora, este palacio de mármol blanco y muros adornados con inscripciones ancestrales es una maravilla arquitectónica. Se dice que en sus jardines secretos se realizan reuniones de comerciantes influyentes… y que en sus pasillos hay puertas que no llevan a ninguna parte.</p>
+                </div>
+                <div id="consejos">
+                    <h3>Consejos para visitantes</h3>
+                    <h4>Llega con la aurora: </h4>
+                    <p>El sol del mediodía es despiadado, pero las primeras horas de la mañana revelan Eliora en toda su gloria.</p>
+                    <h4>Negocia siempre: </h4>
+                    <p>En el Gran Bazar, el primer precio nunca es el verdadero.</p>
+                    <h4>No bebas del primer oasis que veas: </h4>
+                    <p>Algunos oasis están encantados, y los viajeros que beben de sus aguas a veces olvidan a dónde se dirigían… o quiénes son.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <div>
+                <h3>Contacto</h3>
+                <p>Información de contacto de la oficina municipal de información turística:</p>
+                <p>Ayuntamiento - Plaza del Carmen s/n, 18071 andromeda</p>
+                <p>(-37) un yogurt y un hilo</p>
+            </div>
+            <div>
+                <h3>Horario</h3>
+                <p>Cerrado por obras</p>
+            </div>
+        </div>
+        <div>
+            <p>© Pais de Vharin. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

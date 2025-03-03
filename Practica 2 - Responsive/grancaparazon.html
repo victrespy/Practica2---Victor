@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grancaparazon</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="./img/lathander.png">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+        $('.nav__toggle').on('click', function() {
+            $('.nav').toggleClass('display');
+        });
+        $('.nav__toggle').on('click', function() {
+            $('.menu__item').toggleClass('display');
+        });
+        $('.nav__toggle').on('click', function() {
+            $('.menu').toggleClass('escon');
+        });
+        });
+    </script>
+</head>
+<body>
+    <!-- <header>
+        <div>
+            <p>Visita Vharin</p>
+            <div class="logo"><img src="./img/Lathander_Icon.png" alt=""></div>
+        </div>
+        <div>
+            <div class="barra"></div>
+            <div class="contenedor">
+                <div class="logo"><a href="./home.html"><img src="./img/lathander.png" alt=""></a></div>
+                <nav>
+                    <ul>
+                        <li><a href="">Planifica tu viaje</a></li>
+                        <li><a href="">Que hacer</a></li>
+                        <li><a href="./regiones.html">Regiones</a></li>
+                        <li><a href="">Agenda</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="barra"></div>
+        </div>
+    </header> -->
+    <header>
+        <div class="barra"></div>
+        <nav class="nav">
+            <div class="nav__logo"><a href="./home.html"><img src="./img/lathander.png" alt=""></a></div>
+            <span class="nav__toggle">
+                <span class="menu-activador-linea"></span>
+                <span class="menu-activador-linea"></span>
+                <span class="menu-activador-linea"></span>
+            </span>
+            <ul class="menu escon">
+              <li class="menu__item">
+                <a href="./regiones.html">Regiones</a>
+              </li>
+              <li class="menu__item">
+                <a href="./agenda.html">Agenda</a>
+              </li>
+              <li class="menu__item">
+                <a href="./llegar.html">Planifica tu viaje</a>
+              </li>
+            </ul>
+        </nav>
+        <div class="barra"></div>
+    </header>
+    <main>
+        <section id="loc">
+            <p><a href="./home.html">Inicio</a> <span>></span> <a href="./regiones.html">Regiones</a> <span>></span> <b>Grancaparazon</b></p>
+        </section>
+        <section id="banner_gc">
+            <div class="info_b">
+                <h1>GRANCAPARAZON: El Reino de los Piratas</h1>
+            </div>
+        </section>
+        <section id="descubre">
+            <div class="contenedor">
+                <h2>Un puerto de leyendas y libertades</h2>
+                <p>En la encrucijada de rutas marítimas traicioneras, donde los mapas dejan de ser fiables y la ley de los reinos se disuelve en la brisa salina, se alza Grancaparazón. Esta ciudad, construida sobre los restos de antiguos barcos encallados y estructuras improvisadas de madera y piedra, es el refugio definitivo para piratas, mercenarios y comerciantes sin escrúpulos. Aunque la reputación de Grancaparazón sugiere caos y peligro, la realidad es distinta: aquí, la única ley que impera es la del oro, la palabra dada y la astucia del más fuerte.</p>
+                <p>No es una ciudad para los débiles ni para los ingenuos, pero aquellos que saben moverse entre tabernas ruidosas y callejones perfumados de ron y sal encuentran en Grancaparazón un hogar lleno de oportunidades… y secretos.</p>
+            </div>
+        </section>
+        <section id="info_gc">
+            <div class="contenedor">
+                <div id="que_ver">
+                    <h3>¿Que ver?</h3>
+                    <h4>El Espinazo del Leviatán</h4>
+                    <p>Un puerto imponente construido sobre los restos de un monstruo marino colosal. Sus huesos forman la estructura principal de los muelles, y los mercaderes dicen que tocar sus costillas antes de zarpar trae suerte en el mar.</p>
+                    <div>
+
+                    </div>
+                    <h4>El Mercado de las Mareas</h4>
+                    <p>Un lugar donde todo tiene un precio: especias exóticas, joyas robadas, mapas de tesoros y botines malditos. Aquí, si preguntas a la persona correcta, podrías encontrar hasta cosas que nunca deberían haber salido del fondo del océano.</p>
+                    <div>
+                        
+                    </div>
+                    <h4>La Torre de las Velas Negras</h4>
+                    <p>El punto más alto de la ciudad, desde donde se divisan los barcos en el horizonte. Aquí se reúnen los capitanes más influyentes para trazar alianzas, planear saqueos y decidir el destino de aquellos que han traicionado el código de los piratas.</p>
+                </div>
+                <div id="consejos">
+                    <h3>Consejos para visitantes</h3>
+                    <h4>Respeta el código de los piratas: </h4>
+                    <p>En Grancaparazón, la palabra dada es sagrada, y un traidor no dura mucho en sus calles.</p>
+                    <h4>No preguntes demasiado: </h4>
+                    <p>Hay historias que es mejor no escuchar, y nombres que es mejor no pronunciar.</p>
+                    <h4>Si un viejo marinero te advierte sobre una apuesta, escúchalo: </h4>
+                    <p>No todos los juegos de cartas terminan con un simple brindis.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <div>
+                <h3>Contacto</h3>
+                <p>Información de contacto de la oficina municipal de información turística:</p>
+                <p>Ayuntamiento - Plaza del Carmen s/n, 18071 andromeda</p>
+                <p>(-37) un yogurt y un hilo</p>
+            </div>
+            <div>
+                <h3>Horario</h3>
+                <p>Cerrado por obras</p>
+            </div>
+        </div>
+        <div>
+            <p>© Pais de Vharin. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
